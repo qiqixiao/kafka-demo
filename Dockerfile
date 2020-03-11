@@ -14,6 +14,6 @@ COPY ./main.go /app/iov.tencent.com/kafka-consumer
 COPY ./go.mod /app/iov.tencent.com/kafka-consumer
 COPY ./go.sum /app/iov.tencent.com/kafka-consumer
 
-RUN go build .
+RUN go build
 
 ENTRYPOINT ["./kafka-consumer"]
