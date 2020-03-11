@@ -53,5 +53,4 @@ func main(){
 	defer cancel()
 	go kafka( ctx, &wg )
 	wg.Wait()
-	logrus.Error("===================")
 }
